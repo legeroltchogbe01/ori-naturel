@@ -3,186 +3,321 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio · Òrí Naturel · Légérol TCHOGBE</title>
-<meta name="description" content="Portfolio du projet de spécialisation Gestion de projet marketing 360° : lancement d'Òrí Naturel, marque fictive de cosmétiques naturels au karité au Bénin.">
+<title>Òrí Naturel · Portfolio de Légérol TCHOGBE</title>
+<meta name="description" content="Portfolio du projet de spécialisation Gestion de projet marketing 360° : lancement d'Òrí Naturel, marque de cosmétiques naturels au karité au Bénin.">
+<meta property="og:title" content="Òrí Naturel · Portfolio de Légérol TCHOGBE">
+<meta property="og:description" content="Du marché au numérique : audit, stratégie, plan d'action, lancement phygital et pilotage par les indicateurs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 <style>
-  :root { --txt:#1a1a1a; --muted:#5f5f5f; --rule:#d9d9d9; --acc:#2e5a47; --bg:#ffffff; --soft:#f6f6f6; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family: Calibri, "Segoe UI", Helvetica, Arial, sans-serif; color:var(--txt); background:var(--bg); line-height:1.6; font-size:17px; }
-  .wrap { max-width:980px; margin:0 auto; padding:0 24px; }
-  header.top { border-bottom:1px solid var(--rule); }
-  header.top .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:18px; padding-bottom:18px; gap:16px; flex-wrap:wrap; }
-  header.top strong { font-size:17px; }
-  nav a { color:var(--muted); text-decoration:none; font-size:15px; margin-left:18px; }
-  nav a:hover { color:var(--acc); }
-  .hero { padding:64px 0 40px; border-bottom:1px solid var(--rule); }
-  .kicker { color:var(--muted); font-size:15px; margin:0 0 8px; }
-  h1 { font-size:44px; line-height:1.15; margin:0 0 14px; }
-  .lead { font-size:20px; color:var(--muted); max-width:760px; margin:0; }
-  .meta { display:flex; flex-wrap:wrap; gap:32px; margin-top:28px; font-size:15px; }
-  .meta div span { display:block; color:var(--muted); font-size:13px; }
-  section { padding:48px 0; border-bottom:1px solid var(--rule); }
-  .num { color:var(--acc); font-weight:700; font-size:15px; margin:0 0 4px; }
-  h2 { font-size:28px; margin:0 0 16px; }
-  h3 { font-size:19px; margin:26px 0 8px; }
-  p { margin:0 0 12px; }
-  .why { border-left:3px solid var(--acc); padding:4px 0 4px 16px; margin:18px 0; color:var(--txt); }
-  .why b { color:var(--acc); }
-  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
-  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; }
-  th { background:var(--soft); font-weight:700; }
-  .figs { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:14px; margin:18px 0; }
-  .fig { border:1px solid var(--rule); padding:14px 16px; }
-  .fig b { display:block; font-size:24px; }
-  .fig span { color:var(--muted); font-size:14px; }
-  .ok { color:#2e7d4f; } .ko { color:#b03a2e; }
-  .docs { list-style:none; padding:0; margin:16px 0 0; }
-  .docs li { border-top:1px solid var(--rule); padding:10px 0; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
-  .docs li:last-child { border-bottom:1px solid var(--rule); }
-  .docs a { color:var(--acc); font-weight:700; text-decoration:none; }
-  .docs a:hover { text-decoration:underline; }
-  .docs small { color:var(--muted); }
-  .kanban { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0; }
-  .col { background:var(--soft); padding:10px; min-height:120px; }
-  .col h4 { margin:0 0 8px; font-size:14px; color:var(--muted); font-weight:700; }
-  .card { background:#fff; border:1px solid var(--rule); padding:8px 10px; margin-bottom:8px; font-size:13.5px; line-height:1.35; }
-  .card small { display:block; color:var(--muted); margin-top:3px; }
-  footer { padding:36px 0 60px; color:var(--muted); font-size:14px; }
-  a { color:var(--acc); }
-  @media (max-width:760px) { h1 { font-size:34px; } .kanban { grid-template-columns:1fr 1fr; } nav { display:none; } table { font-size:14px; } }
-  @media (max-width:480px) { .kanban { grid-template-columns:1fr; } }
+  :root{
+    --ink:#141414; --ink-2:#3d3d3d; --muted:#6b6b6b; --line:#e6e6e6; --soft:#f7f7f5;
+    --acc:#2e5a47; --acc-soft:#eef3f0; --ok:#2e7d4f; --ko:#b03a2e;
+    --maxw:1120px; --r:10px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:84px}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--acc);text-underline-offset:3px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  /* barre de progression */
+  .progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--acc);z-index:60}
+  /* en-tête */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(10px);-webkit-backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+  header.top.scrolled{border-bottom-color:var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-weight:600;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+  .brand span{color:var(--muted);font-weight:500}
+  nav.menu{display:flex;gap:4px}
+  nav.menu a{color:var(--ink-2);text-decoration:none;font-size:14.5px;font-weight:500;padding:8px 12px;border-radius:999px;transition:background .15s,color .15s}
+  nav.menu a:hover{background:var(--soft)}
+  nav.menu a.active{background:var(--acc-soft);color:var(--acc)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font:500 14px Inter,sans-serif;color:var(--ink);cursor:pointer}
+  /* hero */
+  .hero{padding:96px 0 72px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:0 0 20px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.02em;margin:0 0 24px;max-width:15ch}
+  .lead{font-size:clamp(18px,2vw,21px);color:var(--ink-2);max-width:62ch;margin:0}
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border-top:1px solid var(--line)}
+  .facts div{padding:18px 18px 0 0}
+  .facts span{display:block;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+  .facts b{font-weight:600;font-size:16px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);transition:background .15s,color .15s}
+  .btn.primary{background:var(--ink);color:#fff}
+  .btn:hover{background:var(--acc);border-color:var(--acc);color:#fff}
+  /* sections */
+  section{padding:88px 0;border-top:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:260px 1fr;gap:56px}
+  .side{position:sticky;top:100px;align-self:start}
+  .num{font-family:Fraunces,Georgia,serif;font-size:56px;line-height:1;color:var(--acc);margin:0 0 10px}
+  .side h2{font-size:24px;line-height:1.25;letter-spacing:-.01em;margin:0 0 10px;font-weight:600}
+  .side p{color:var(--muted);font-size:15px;margin:0}
+  .content>*:first-child{margin-top:0}
+  h3{font-size:19px;font-weight:600;margin:40px 0 10px;letter-spacing:-.005em}
+  p{margin:0 0 14px}
+  .why{background:var(--soft);border-radius:var(--r);padding:20px 24px;margin:26px 0}
+  .why strong{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--acc);margin-bottom:6px}
+  .why p{margin:0;color:var(--ink-2)}
+  /* chiffres */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
+  .stat{border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;transition:border-color .2s,transform .2s}
+  .stat:hover{border-color:#cfcfcf;transform:translateY(-2px)}
+  .stat b{display:block;font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+  .stat span{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+  .stat .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+  .stats.five{grid-template-columns:repeat(3,minmax(0,1fr))}
+  @media (max-width:520px){.stats.five{grid-template-columns:1fr 1fr}}
+  .ok b{color:var(--ok)} .ok .tag{background:#e7f3ec;color:var(--ok)}
+  .ko b{color:var(--ko)} .ko .tag{background:#f8e7e5;color:var(--ko)}
+  /* tableaux */
+  .table{width:100%;border-collapse:collapse;font-size:15px;margin:18px 0}
+  .table th,.table td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  .table th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--ink)}
+  .table tr.total td{font-weight:700;border-bottom:none}
+  .table td.num-c{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+  .scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  /* frise */
+  .timeline{position:relative;margin:24px 0;padding-left:28px}
+  .timeline:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
+  .step{position:relative;padding:0 0 26px}
+  .step:before{content:"";position:absolute;left:-27px;top:7px;width:11px;height:11px;border-radius:50%;background:#fff;border:2px solid var(--acc)}
+  .step.main:before{background:var(--acc)}
+  .step small{display:block;font-size:13px;font-weight:600;color:var(--acc);letter-spacing:.03em}
+  .step b{display:block;font-weight:600;margin:2px 0}
+  .step p{color:var(--ink-2);margin:0;font-size:15.5px}
+  /* kanban */
+  .kanban{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0}
+  .col{background:var(--soft);border-radius:var(--r);padding:12px}
+  .col h4{margin:2px 4px 10px;font-size:13px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between}
+  .col h4 em{font-style:normal;color:var(--muted);font-weight:500}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:14px;line-height:1.4}
+  .card small{display:block;color:var(--muted);font-size:12.5px;margin-top:4px}
+  /* documents */
+  .docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:26px}
+  .doc{display:flex;flex-direction:column;justify-content:space-between;gap:16px;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+  .doc:hover{border-color:var(--acc);box-shadow:0 6px 20px rgba(0,0,0,.05);transform:translateY(-2px)}
+  .doc b{font-weight:600;font-size:16px}
+  .doc .meta{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .badge{font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:3px 8px;border:1px solid currentColor;border-radius:6px;color:var(--acc)}
+  .doc .go{color:var(--acc);font-weight:600}
+  /* pied */
+  footer{border-top:1px solid var(--line);padding:56px 0 72px;color:var(--muted);font-size:14.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer b{color:var(--ink)}
+  /* apparition */
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.stat,.doc{transition:none}}
+  /* responsive */
+  @media (max-width:960px){
+    .grid{grid-template-columns:1fr;gap:28px}
+    .side{position:static}
+    .num{font-size:44px}
+    .kanban{grid-template-columns:repeat(2,minmax(0,1fr))}
+  }
+  @media (max-width:820px){
+    .menu-btn{display:inline-block}
+    nav.menu{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:10px 20px 18px}
+    nav.menu.open{display:flex}
+    nav.menu a{padding:12px 10px;border-radius:8px;font-size:16px}
+    .facts{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    .wrap{padding:0 20px}
+    .hero{padding:64px 0 48px}
+    section{padding:64px 0}
+    .kanban{grid-template-columns:1fr}
+    .facts{grid-template-columns:1fr}
+    .table{font-size:14px}
+  }
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap">
-  <strong>Légérol TCHOGBE · Portfolio</strong>
-  <nav><a href="#contexte">Contexte</a><a href="#strategie">Stratégie</a><a href="#planification">Planification</a><a href="#coordination">Coordination</a><a href="#lancement">Lancement 360°</a><a href="#performance">Performance</a></nav>
-</div></header>
+<div class="progress" id="progress"></div>
 
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#">Légérol TCHOGBE <span>· Portfolio</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu">
+      <a href="#contexte">Contexte</a>
+      <a href="#strategie">Stratégie</a>
+      <a href="#planification">Planification</a>
+      <a href="#coordination">Coordination</a>
+      <a href="#lancement">Lancement</a>
+      <a href="#performance">Performance</a>
+    </nav>
+  </div>
+</header>
+
+<main>
 <div class="hero"><div class="wrap">
-  <p class="kicker">Projet de spécialisation · Gestion de projet marketing 360° · D-CLIC (OIF)</p>
-  <h1>Òrí Naturel : faire passer une marque de karité du marché au numérique</h1>
-  <p class="lead">Comment une jeune marque béninoise de cosmétiques naturels, qui réalisait 95 % de ses ventes sur les marchés de Cotonou, a structuré son marketing pour vendre en ligne, s'étendre à d'autres villes et fidéliser ses clientes.</p>
-  <div class="meta">
-    <div><span>Entreprise</span>Òrí Naturel (cas fictif), Cotonou</div>
-    <div><span>Taille</span>5 personnes</div>
-    <div><span>Mon rôle</span>Bras droit Marketing, chef de projet</div>
-    <div><span>Période</span>novembre 2026 à avril 2027</div>
+  <p class="eyebrow reveal">Projet de spécialisation · Gestion de projet marketing 360°</p>
+  <h1 class="reveal">Òrí Naturel, du marché au numérique</h1>
+  <p class="lead reveal">Comment une jeune marque béninoise de cosmétiques au karité, qui réalisait 95 % de ses ventes sur les marchés de Cotonou, a structuré son marketing pour vendre en ligne, s'étendre à d'autres villes et fidéliser ses clientes.</p>
+  <div class="cta reveal">
+    <a class="btn primary" href="#contexte">Découvrir le projet</a>
+    <a class="btn" href="#documents-performance">Voir les résultats</a>
+  </div>
+  <div class="facts reveal">
+    <div><span>Entreprise</span><b>Òrí Naturel, Cotonou</b></div>
+    <div><span>Équipe</span><b>5 personnes</b></div>
+    <div><span>Mon rôle</span><b>Bras droit Marketing</b></div>
+    <div><span>Période</span><b>Nov. 2026 → avr. 2027</b></div>
   </div>
 </div></div>
 
-<section id="contexte"><div class="wrap">
-  <p class="num">1</p><h2>Le contexte</h2>
-  <p>Òrí Naturel fabrique à Cotonou des crèmes, huiles et savons à base de beurre de karité, d'huile de coco et de savon noir. Le nom vient du yoruba : « òrí » signifie beurre de karité. La marque vise les femmes de 25 à 50 ans, soucieuses de leur santé et de l'environnement.</p>
-  <div class="figs">
-    <div class="fig"><b>18 000 000 FCFA</b><span>chiffre d'affaires 2026</span></div>
-    <div class="fig"><b>95 %</b><span>des ventes sur les marchés</span></div>
-    <div class="fig"><b>5 %</b><span>des ventes en ligne</span></div>
-    <div class="fig"><b>22 %</b><span>de clientes qui rachètent en 3 mois</span></div>
+<section id="contexte"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">01</p><h2>Le contexte</h2><p>L'entreprise, sa cible et ses objectifs.</p></aside>
+  <div class="content reveal">
+    <p>Òrí Naturel fabrique à Cotonou des crèmes, huiles et savons au beurre de karité, à l'huile de coco et au savon noir. Son nom vient du yoruba : <em>òrí</em> signifie beurre de karité. La marque s'adresse aux femmes de 25 à 50 ans, attentives à leur santé et à l'environnement.</p>
+    <div class="stats">
+      <div class="stat"><b>18 M FCFA</b><span>chiffre d'affaires 2026</span></div>
+      <div class="stat"><b>95 %</b><span>des ventes sur les marchés</span></div>
+      <div class="stat"><b>5 %</b><span>des ventes en ligne</span></div>
+      <div class="stat"><b>22 %</b><span>de réachat en 3 mois</span></div>
+    </div>
+    <div class="why"><strong>Objectifs 2027</strong><p>Passer à 20 % du chiffre d'affaires en ligne, s'implanter à Porto-Novo et Parakou, et porter le réachat à 35 %, avec un pilotage financier strict.</p></div>
   </div>
-  <p><b>Objectifs fixés pour 2027 :</b> passer à 20 % du chiffre d'affaires en ligne, s'implanter à Porto-Novo et Parakou, et porter le réachat à 35 %, avec un pilotage financier strict.</p>
 </div></section>
 
-<section id="strategie"><div class="wrap">
-  <p class="num">2</p><h2>L'analyse et la stratégie</h2>
-  <h3>Le diagnostic</h3>
-  <p>L'audit croise les chiffres du marché béninois et ceux de l'entreprise, selon la méthode Démarrer / Arrêter / Continuer.</p>
-  <table>
-    <tr><th>Constat sur le marché</th><th>Ce que cela implique</th></tr>
-    <tr><td>Facebook touche 2,5 millions de Béninois, Instagram 237 000 (DataReportal 2026)</td><td>Facebook et WhatsApp sont les canaux numériques prioritaires</td></tr>
-    <tr><td>32,2 % de la population utilise internet</td><td>Le terrain reste indispensable : la stratégie doit être phygitale</td></tr>
-    <tr><td>11,06 millions de comptes Mobile Money actifs (ARCEP, 2025)</td><td>La vente en ligne est possible sans carte bancaire</td></tr>
-    <tr><td>Interdiction de 139 produits éclaircissants par l'ABMED en mai 2026</td><td>Une marque naturelle, en règle et transparente a un argument fort</td></tr>
-  </table>
-  <p>La segmentation distingue quatre comportements d'achat : les fidèles du naturel, les « réparatrices de peau » qui quittent les éclaircissants, les mamans prescriptrices et les connectées qui achètent des coffrets.</p>
-  <div class="why"><b>Pourquoi :</b> sans identité reconnaissable ni vente en ligne, la marque ne pouvait pas sortir des marchés de Cotonou. L'audit débouche sur trois axes : crédibiliser, vendre en ligne, étendre et fidéliser.</div>
-  <h3>La plateforme de marque</h3>
-  <p><b>Mission :</b> fabriquer au Bénin des soins naturels au karité, dont la composition est connue et l'origine traçable. <b>Vision :</b> devenir d'ici 2030 la marque béninoise de référence pour une peau saine. <b>Valeurs :</b> transparence, santé avant l'apparence, ancrage local, proximité. <b>Proposition de valeur :</b> « Le karité du Bénin, pur et tracé, pour une peau saine. »</p>
-  <ul class="docs">
-    <li><a href="documents/01_Rapport_audit.pdf">Rapport d'audit</a><small>PDF · 2 pages</small></li>
-    <li><a href="documents/02_Plateforme_de_marque.pdf">Plateforme de marque</a><small>PDF · 1 page</small></li>
-  </ul>
-</div></section>
-
-<section id="planification"><div class="wrap">
-  <p class="num">3</p><h2>La planification et le budget</h2>
-  <p>Les trois axes sont traduits en 16 actions décrites selon la méthode QQOQCCP (qui, quoi, où, quand, comment, combien, pourquoi), organisées dans un rétro-planning à partir du Jour J, le samedi 6 mars 2027.</p>
-  <table>
-    <tr><th>Axe</th><th>Actions principales</th><th>Budget</th></tr>
-    <tr><td>Crédibiliser</td><td>Autorisation de vente, identité visuelle, site e-commerce, shooting photo</td><td>2 940 000 FCFA</td></tr>
-    <tr><td>Vendre en ligne</td><td>Publicité Facebook, visuels publicitaires</td><td>1 584 000 FCFA</td></tr>
-    <tr><td>Étendre et fidéliser</td><td>Boutique éphémère, micro-influenceuses, programme de fidélité, e-mailing</td><td>915 000 FCFA</td></tr>
-    <tr><th>Total</th><th>Sous-total 5 439 000 + marge de sécurité de 10 %</th><th>5 982 900 FCFA</th></tr>
-  </table>
-  <div class="why"><b>Pourquoi :</b> chaque prix vient d'une source vérifiable (agences de Cotonou, Hostinger, Brevo, tarifs officiels de marché, grilles d'influenceurs). Des marges de sécurité sont prévues sur les délais, car le site devait être prêt 15 jours avant le lancement. Le fichier de suivi compare ensuite le prévu, l'engagé et le réalisé, avec un commentaire sur chaque écart.</div>
-  <ul class="docs">
-    <li><a href="documents/03_Plan_action_marketing.pdf">Plan d'action marketing</a><small>PDF · 2 pages</small></li>
-    <li><a href="documents/04_Suivi_budgetaire.xlsx">Fichier de suivi budgétaire</a><small>Excel · <a href="documents/04_Suivi_budgetaire.pdf">version PDF</a></small></li>
-  </ul>
-</div></section>
-
-<section id="coordination"><div class="wrap">
-  <p class="num">4</p><h2>La coordination et le pilotage</h2>
-  <h3>Le brief créatif</h3>
-  <p>Une agence a été chargée de créer l'identité visuelle et le site e-commerce avec paiement Mobile Money, pour 2 500 000 FCFA, livrés le 19 février 2027. Le brief décrit le persona (Afiwa, 34 ans, qui a renoncé aux crèmes éclaircissantes), les livrables, le calendrier de validation, ainsi que les références et anti-références visuelles.</p>
-  <div class="why"><b>Pourquoi :</b> un brief précis sécurise le prix et le délai, tout en laissant à l'agence le choix des pistes créatives. Les anti-références écartent volontairement les codes des produits éclaircissants.</div>
-  <h3>Le suivi collaboratif (Kanban)</h3>
-  <p>Les 16 actions sont suivies dans un tableau Kanban sur Notion : un responsable, une échéance et un axe par carte. Aperçu au 15 mars 2027 :</p>
-  <div class="kanban">
-    <div class="col"><h4>À faire</h4>
-      <div class="card">Publicité Facebook continue<small>Chargée marketing · déc. 2027</small></div></div>
-    <div class="col"><h4>En cours</h4>
-      <div class="card">Programme de fidélité<small>Vendeuse terrain</small></div>
-      <div class="card">Revendeurs à Porto-Novo et Parakou<small>Fondatrice · 30/04</small></div>
-      <div class="card">E-mailing et CRM<small>Chargée marketing</small></div></div>
-    <div class="col"><h4>En validation</h4>
-      <div class="card">Bilan mensuel d'avril<small>Chef de projet · 05/04</small></div></div>
-    <div class="col"><h4>Terminé</h4>
-      <div class="card">Autorisation de vente</div><div class="card">Choix de l'agence</div><div class="card">Identité visuelle</div><div class="card">Shooting photo</div><div class="card">Site e-commerce</div><div class="card">Micro-influenceuses</div><div class="card">Boutique éphémère</div><div class="card">Visuels publicitaires</div><div class="card">Teasing, Jour J, amplification</div></div>
+<section id="strategie"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">02</p><h2>L'analyse et la stratégie</h2><p>Audit du marché béninois et plateforme de marque.</p></aside>
+  <div class="content reveal">
+    <p>L'audit croise les chiffres du marché et ceux de l'entreprise, selon la méthode Démarrer / Arrêter / Continuer.</p>
+    <div class="scroll-x"><table class="table">
+      <tr><th>Constat sur le marché</th><th>Conséquence pour la marque</th></tr>
+      <tr><td>Facebook touche 2,5 millions de Béninois, Instagram 237 000</td><td>Facebook et WhatsApp sont les canaux numériques prioritaires</td></tr>
+      <tr><td>32,2 % de la population utilise internet</td><td>Le terrain reste indispensable : la stratégie sera phygitale</td></tr>
+      <tr><td>11,06 millions de comptes Mobile Money actifs</td><td>Vendre en ligne sans carte bancaire est possible</td></tr>
+      <tr><td>139 produits éclaircissants interdits par l'ABMED en mai 2026</td><td>Une marque naturelle, en règle et transparente se démarque</td></tr>
+    </table></div>
+    <p>La cible est découpée en quatre comportements d'achat : les fidèles du naturel, les « réparatrices de peau » qui quittent les éclaircissants, les mamans prescriptrices et les connectées qui achètent des coffrets.</p>
+    <div class="why"><strong>Pourquoi</strong><p>Sans identité reconnaissable ni vente en ligne, la marque ne pouvait pas sortir des marchés de Cotonou. L'audit débouche sur trois axes : crédibiliser, vendre en ligne, étendre et fidéliser.</p></div>
+    <h3>La plateforme de marque</h3>
+    <div class="scroll-x"><table class="table">
+      <tr><td><b>Mission</b></td><td>Fabriquer au Bénin des soins naturels au karité, à la composition connue et à l'origine traçable.</td></tr>
+      <tr><td><b>Vision</b></td><td>Devenir d'ici 2030 la marque béninoise de référence pour une peau saine.</td></tr>
+      <tr><td><b>Valeurs</b></td><td>Transparence, santé avant l'apparence, ancrage local, proximité.</td></tr>
+      <tr><td><b>Promesse</b></td><td>« Le karité du Bénin, pur et tracé, pour une peau saine. »</td></tr>
+    </table></div>
+    <div class="docs">
+      <a class="doc" href="documents/01_Rapport_audit.pdf" target="_blank" rel="noopener"><b>Rapport d'audit</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+      <a class="doc" href="documents/02_Plateforme_de_marque.pdf" target="_blank" rel="noopener"><b>Plateforme de marque</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+    </div>
   </div>
-  <ul class="docs">
-    <li><a href="documents/05_Brief_creatif.pdf">Brief créatif</a><small>PDF · 2 pages</small></li>
-    <li><a href="https://silicon-turnover-063.notion.site/r-Naturel-Suivi-du-projet-de-lancement-2027-41e942f073c081b9a487de4229111f1b">Tableau Kanban sur Notion</a><small>Lien externe</small></li>
-  </ul>
 </div></section>
 
-<section id="lancement"><div class="wrap">
-  <p class="num">5</p><h2>La communication 360°</h2>
-  <p>Le lancement a eu lieu le samedi 6 mars 2027, le week-end de la Journée internationale des droits des femmes, dans une boutique éphémère à Cotonou et sur le site, avec un seul message : « Le karité du Bénin, pur et tracé, pour une peau saine. »</p>
-  <table>
-    <tr><th>Phase</th><th>Dates</th><th>Actions</th></tr>
-    <tr><td>Teasing</td><td>19 février → 5 mars</td><td>Annonce sur Facebook, flyers avec QR code sur les marchés, kit presse, tests des influenceuses</td></tr>
-    <tr><td>Jour J</td><td>6 mars</td><td>Ouverture du site, boutique éphémère, ateliers « diagnostic peau », live Facebook</td></tr>
-    <tr><td>Amplification</td><td>7 → 13 mars</td><td>Code prolongé, vidéo des productrices le 8 mars, relance des contacts, retombées presse</td></tr>
-  </table>
-  <p><b>Ponts entre physique et numérique :</b> QR code sur les flyers et les étiquettes, code ORI10 valable partout, conseils envoyés sur WhatsApp après l'atelier, Click &amp; Collect au marché ou en pharmacie, carte de fidélité reliée au fichier WhatsApp.</p>
-  <div class="why"><b>Pourquoi :</b> le terrain fait essayer, le numérique fait racheter. Les micro-influenceuses apportent l'émotion, la coopérative de productrices prouve l'origine, et la pharmacie partenaire et la presse apportent la caution santé.</div>
-  <ul class="docs">
-    <li><a href="documents/06_Plan_de_lancement.pdf">Plan de lancement phygital</a><small>PDF · 2 pages</small></li>
-  </ul>
-</div></section>
-
-<section id="performance"><div class="wrap">
-  <p class="num">6</p><h2>La performance et le reporting</h2>
-  <p>Le tableau de bord sépare les données brutes de la visualisation et suit 5 indicateurs avec leur objectif (mars 2027).</p>
-  <div class="figs">
-    <div class="fig"><b class="ok">4 300 000 FCFA</b><span>CA du mois · objectif 3 500 000</span></div>
-    <div class="fig"><b class="ok">176 %</b><span>ROI du lancement · objectif 100 %</span></div>
-    <div class="fig"><b class="ok">2 755 FCFA</b><span>CPA · maximum 5 250</span></div>
-    <div class="fig"><b class="ko">18,1 %</b><span>CA en ligne · objectif 20 %</span></div>
-    <div class="fig"><b class="ko">26 %</b><span>Réachat · objectif 35 %</span></div>
+<section id="planification"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">03</p><h2>La planification et le budget</h2><p>16 actions, un rétro-planning et un budget sourcé.</p></aside>
+  <div class="content reveal">
+    <p>Les trois axes sont traduits en 16 actions décrites selon la méthode QQOQCCP, organisées en rétro-planning à partir du Jour J, le samedi 6 mars 2027.</p>
+    <div class="scroll-x"><table class="table">
+      <tr><th>Axe</th><th>Actions principales</th><th style="text-align:right">Budget</th></tr>
+      <tr><td>Crédibiliser</td><td>Autorisation de vente, identité visuelle, site e-commerce, photos</td><td class="num-c">2 940 000 FCFA</td></tr>
+      <tr><td>Vendre en ligne</td><td>Publicité Facebook, visuels publicitaires</td><td class="num-c">1 584 000 FCFA</td></tr>
+      <tr><td>Étendre et fidéliser</td><td>Boutique éphémère, micro-influenceuses, fidélité, e-mailing</td><td class="num-c">915 000 FCFA</td></tr>
+      <tr class="total"><td>Total</td><td>Sous-total 5 439 000 + marge de sécurité de 10 %</td><td class="num-c">5 982 900 FCFA</td></tr>
+    </table></div>
+    <div class="why"><strong>Pourquoi</strong><p>Chaque prix provient d'une source vérifiable : agences de Cotonou, Hostinger, Brevo, tarifs officiels de marché, grilles d'influenceurs. Les délais intègrent des marges, avec un site prêt 15 jours avant le lancement. Le fichier de suivi compare ensuite le prévu, l'engagé et le réalisé.</p></div>
+    <div class="docs">
+      <a class="doc" href="documents/03_Plan_action_marketing.pdf" target="_blank" rel="noopener"><b>Plan d'action marketing</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+      <a class="doc" href="documents/04_Suivi_budgetaire.xlsx"><b>Suivi budgétaire</b><div class="meta"><span class="badge">XLSX</span><span class="go">Télécharger</span></div></a>
+      <a class="doc" href="documents/04_Suivi_budgetaire.pdf" target="_blank" rel="noopener"><b>Suivi budgétaire, aperçu</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+    </div>
   </div>
-  <p><b>Quoi :</b> le lancement est rentable, mais la vente en ligne et le réachat restent sous l'objectif. <b>Donc :</b> la boutique éphémère a fait 52 % des ventes, hors ligne ; les influenceuses n'ont rapporté qu'un ROI de 39 %. <b>Et maintenant :</b> réallouer 300 000 FCFA vers le reciblage Facebook vers le site, et relancer automatiquement les 355 nouvelles clientes à J+30.</p>
-  <div class="why"><b>Pourquoi :</b> le reporting sert à décider. Chaque indicateur est relié à un objectif de l'audit, et chaque écart débouche sur une action chiffrée pour le mois suivant.</div>
-  <ul class="docs">
-    <li><a href="documents/07_Tableau_de_bord.xlsx">Tableau de bord de pilotage</a><small>Excel · <a href="documents/07_Synthese_tableau_de_bord.pdf">synthèse PDF</a></small></li>
-    <li><a href="documents/08_Rapport_activite_mensuel.pdf">Rapport d'activité mensuel</a><small>PDF · <a href="documents/08_Rapport_activite_mensuel.pptx">version PowerPoint</a></small></li>
-  </ul>
 </div></section>
+
+<section id="coordination"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">04</p><h2>La coordination et le pilotage</h2><p>Brief à l'agence et suivi collaboratif.</p></aside>
+  <div class="content reveal">
+    <p>Une agence a été chargée de l'identité visuelle et du site e-commerce avec paiement Mobile Money : 2 500 000 FCFA, livraison le 19 février 2027. Le brief décrit le persona, Afiwa, 34 ans, qui a renoncé aux crèmes éclaircissantes, ainsi que les livrables, le calendrier, les références et les anti-références visuelles.</p>
+    <div class="why"><strong>Pourquoi</strong><p>Un brief précis sécurise le prix et le délai tout en laissant l'agence libre de ses pistes créatives. Les anti-références écartent volontairement les codes des produits éclaircissants.</p></div>
+    <h3>Le tableau Kanban</h3>
+    <p>Les 16 actions sont suivies sur Notion, avec un responsable, une échéance et un axe par carte. Situation au 15 mars 2027 :</p>
+    <div class="kanban">
+      <div class="col"><h4>À faire <em>1</em></h4>
+        <div class="card">Publicité Facebook continue<small>Chargée marketing · déc. 2027</small></div></div>
+      <div class="col"><h4>En cours <em>3</em></h4>
+        <div class="card">Programme de fidélité<small>Vendeuse terrain</small></div>
+        <div class="card">Revendeurs Porto-Novo et Parakou<small>Fondatrice · 30/04</small></div>
+        <div class="card">E-mailing et CRM<small>Chargée marketing</small></div></div>
+      <div class="col"><h4>En validation <em>1</em></h4>
+        <div class="card">Bilan mensuel d'avril<small>Chef de projet · 05/04</small></div></div>
+      <div class="col"><h4>Terminé <em>11</em></h4>
+        <div class="card">Autorisation de vente</div><div class="card">Identité visuelle et site</div><div class="card">Photos et visuels</div><div class="card">Influenceuses et boutique éphémère</div><div class="card">Teasing, Jour J, amplification</div></div>
+    </div>
+    <div class="docs">
+      <a class="doc" href="documents/05_Brief_creatif.pdf" target="_blank" rel="noopener"><b>Brief créatif</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+      <a class="doc" href="https://silicon-turnover-063.notion.site/r-Naturel-Suivi-du-projet-de-lancement-2027-41e942f073c081b9a487de4229111f1b" target="_blank" rel="noopener"><b>Tableau Kanban</b><div class="meta"><span class="badge">NOTION</span><span class="go">Ouvrir</span></div></a>
+    </div>
+  </div>
+</div></section>
+
+<section id="lancement"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">05</p><h2>La communication 360°</h2><p>Un lancement phygital en trois temps.</p></aside>
+  <div class="content reveal">
+    <p>Le lancement a eu lieu le samedi 6 mars 2027, le week-end de la Journée internationale des droits des femmes, dans une boutique éphémère à Cotonou et sur le site, avec un seul message : « Le karité du Bénin, pur et tracé, pour une peau saine. »</p>
+    <div class="timeline">
+      <div class="step"><small>19 février → 5 mars</small><b>Teasing</b><p>Annonce sur Facebook, flyers avec QR code sur les marchés, kit presse, tests des influenceuses.</p></div>
+      <div class="step main"><small>Samedi 6 mars 2027</small><b>Jour J</b><p>Ouverture du site, boutique éphémère, ateliers « diagnostic peau », live Facebook, tirage au sort.</p></div>
+      <div class="step"><small>7 → 13 mars</small><b>Amplification</b><p>Code prolongé, vidéo des productrices le 8 mars, relance des contacts, retombées presse.</p></div>
+    </div>
+    <p><b>Ponts entre physique et numérique :</b> QR code sur les flyers et les étiquettes, code ORI10 valable partout, conseils envoyés sur WhatsApp après l'atelier, Click &amp; Collect au marché ou en pharmacie, carte de fidélité reliée au fichier WhatsApp.</p>
+    <div class="why"><strong>Pourquoi</strong><p>Le terrain fait essayer, le numérique fait racheter. Les micro-influenceuses apportent l'émotion, la coopérative de productrices prouve l'origine, la pharmacie partenaire et la presse apportent la caution santé.</p></div>
+    <div class="docs">
+      <a class="doc" href="documents/06_Plan_de_lancement.pdf" target="_blank" rel="noopener"><b>Plan de lancement phygital</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+    </div>
+  </div>
+</div></section>
+
+<section id="performance"><div class="wrap grid">
+  <aside class="side reveal"><p class="num">06</p><h2>La performance et le reporting</h2><p>Cinq indicateurs, une analyse, des actions.</p></aside>
+  <div class="content reveal">
+    <p>Le tableau de bord sépare les données brutes de la visualisation et suit 5 indicateurs, chacun comparé à son objectif (mars 2027).</p>
+    <div class="stats five">
+      <div class="stat ok"><b>4,3 M FCFA</b><span>CA du mois · objectif 3,5 M</span><i class="tag" style="font-style:normal">Atteint</i></div>
+      <div class="stat ok"><b>176 %</b><span>ROI du lancement · objectif 100 %</span><i class="tag" style="font-style:normal">Atteint</i></div>
+      <div class="stat ok"><b>2 755 FCFA</b><span>CPA · maximum 5 250</span><i class="tag" style="font-style:normal">Atteint</i></div>
+      <div class="stat ko"><b>18,1 %</b><span>CA en ligne · objectif 20 %</span><i class="tag" style="font-style:normal">À corriger</i></div>
+      <div class="stat ko"><b>26 %</b><span>Réachat · objectif 35 %</span><i class="tag" style="font-style:normal">À corriger</i></div>
+    </div>
+    <div class="scroll-x"><table class="table">
+      <tr><td><b>Quoi</b></td><td>Le lancement est rentable, mais la vente en ligne et le réachat restent sous l'objectif.</td></tr>
+      <tr><td><b>Donc</b></td><td>La boutique éphémère a fait 52 % des ventes, hors ligne ; les influenceuses n'ont rapporté qu'un ROI de 39 %.</td></tr>
+      <tr><td><b>Et maintenant</b></td><td>Réallouer 300 000 FCFA vers le reciblage Facebook vers le site, et relancer automatiquement les 355 nouvelles clientes à J+30.</td></tr>
+    </table></div>
+    <div class="why"><strong>Pourquoi</strong><p>Le reporting sert à décider : chaque indicateur est relié à un objectif de l'audit, et chaque écart débouche sur une action chiffrée pour le mois suivant.</p></div>
+    <div class="docs" id="documents-performance">
+      <a class="doc" href="documents/07_Tableau_de_bord.xlsx"><b>Tableau de bord de pilotage</b><div class="meta"><span class="badge">XLSX</span><span class="go">Télécharger</span></div></a>
+      <a class="doc" href="documents/07_Synthese_tableau_de_bord.pdf" target="_blank" rel="noopener"><b>Synthèse du tableau de bord</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+      <a class="doc" href="documents/08_Rapport_activite_mensuel.pdf" target="_blank" rel="noopener"><b>Rapport d'activité mensuel</b><div class="meta"><span class="badge">PDF</span><span class="go">Ouvrir</span></div></a>
+      <a class="doc" href="documents/08_Rapport_activite_mensuel.pptx"><b>Rapport mensuel, version PowerPoint</b><div class="meta"><span class="badge">PPTX</span><span class="go">Télécharger</span></div></a>
+    </div>
+  </div>
+</div></section>
+</main>
 
 <footer><div class="wrap">
-  Légérol TCHOGBE · Bras droit Marketing · Cotonou, Bénin<br>
-  Projet de spécialisation du parcours « Gestion de projet marketing 360° » (D-CLIC, OIF). Òrí Naturel est une entreprise fictive ; les données du marché sont réelles et sourcées dans chaque document, les données internes de l'entreprise sont des hypothèses du cas.
+  <div><b>Légérol TCHOGBE</b><br>Bras droit Marketing · Cotonou, Bénin</div>
+  <div style="max-width:560px">Projet de spécialisation du parcours « Gestion de projet marketing 360° » (D-CLIC, OIF). Òrí Naturel est une entreprise fictive : les données du marché sont réelles et sourcées dans chaque document, les données internes sont des hypothèses du cas.</div>
 </div></footer>
+
+<script>
+  const header=document.getElementById('top'), bar=document.getElementById('progress');
+  const btn=document.getElementById('menuBtn'), menu=document.getElementById('menu');
+  btn.addEventListener('click',()=>{const o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'Fermer':'Menu';});
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='Menu';}));
+  const onScroll=()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';header.classList.toggle('scrolled',h.scrollTop>10);};
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  const links=[...menu.querySelectorAll('a')];
+  const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(s=>spy.observe(s));
+  const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>rv.observe(el));
+</script>
 </body>
 </html>
